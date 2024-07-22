@@ -1,6 +1,8 @@
 //? Acessando os elementos do DOM.
 import styled, { createGlobalStyle } from 'styled-components';
 
+import { Theme } from './themes/dark';
+
 const EstiloGlobal = createGlobalStyle `
   * {
     margin: 0px;
@@ -10,13 +12,17 @@ const EstiloGlobal = createGlobalStyle `
   }
 
   body {
+  height: 100vh;
+  position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: ${(props) => (props.theme as Theme).corFundo};
 
     @media (max-width: 768px) {
       padding-top: 16px;
     }
   }
+
 `
 
 export default EstiloGlobal;

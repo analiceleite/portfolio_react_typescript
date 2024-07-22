@@ -1,0 +1,12 @@
+#mouse-follower {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background-color: #00a2ff5e;
+  /* background-color: #ffffff4f; */
+  border-radius: 50%;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  filter: blur(300px);
+}
